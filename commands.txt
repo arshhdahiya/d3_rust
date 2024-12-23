@@ -1,0 +1,16 @@
+Use following command in the terminal to create a new project:
+	cargo new <project_name>
+
+Running the file:
+	rustc main.rs
+
+Running the exe
+	./main
+
+
+Different way of running the file
+	cargo build
+	cargo run
+
+For checking errors without building :
+	cargo check

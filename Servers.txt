@@ -1,0 +1,19 @@
+Servers communicate through the ports 
+There are 65536 software ports are available into our system.
+
+Link for learning more about ports : https://www.cloudflare.com/learning/network-layer/what-is-a-computer-port/#:~:text=There%20are%2065%2C535%20possible%20port,File%20Transfer%20Protocol%20(FTP).
+
+Difference between http and https :
+    HTTPS is HTTP with encryption and verification. The only difference between the two protocols is that HTTPS uses TLS (SSL) to encrypt normal HTTP requests and responses, and to digitally sign those requests and responses. As a result, HTTPS is far more secure than HTTP.  
+
+A TCP listener binds a specific address and port, allowing a program to accept connections from clients over the TCP protocol.
+    In Rust, a TcpListener is part of the standard library's std::net
+
+Socket is gerally a end point to establish the connection.
+
+Rust tells us to select 7878 as default port as in symbian keypad phone pressing 7878 spells rust/
+
+
+// Pre-requisites
+`
+

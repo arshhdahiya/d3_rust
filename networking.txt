@@ -1,0 +1,6 @@
+OSI model helps 2 systems or devices to communicate with each others
+Best video on OSI model :
+    https://youtu.be/PD-wqulrEFk?si=ohOItqH0O2Uoz0NU    
+
+Best video on working of the servers:
+    https://youtu.be/thJSev60yfg?si=Daut7M0QMXhxeVzn

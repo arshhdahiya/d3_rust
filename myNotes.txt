@@ -1,0 +1,105 @@
+Rust is a compiled language.
+Rust is among those languages that consumes very less memory.
+Cargo is the package manager in rust just like pip in python.
+
+It do not have the concepts of classes and objects, but uses structs indeed.
+
+rustc main.rs is the command for running the sample program where rustc stands for rustcompiler
+it basically creates a new binary which we can't generally see, so for that we uses this command : ./main
+
+In order to create new packages means complete bundle we generlly uses Cargo
+    -cargo new <project name> 
+        creates a new package
+        inside the package there's a new file named cargo.toml which is generally used to install dependencies or external packages
+    - cargo run     
+        directly starts the package
+    -cargo check 
+        checks the package has any errors or not
+    - cargo build 
+        builds the package
+
+let num = 5;
+    creates an immutable variable by default
+    for making it mutable mut variable is used , exampel let mut num = 5;
+
+An expression is a combination of values, variables, operators, and function calls that produces a single value. Expressions represent computations and are evaluated to produce a result.
+
+In direct operations semicolon is not used
+
+After learning it a bit, what i felt like is, it is basically a combination of python and cpp,
+
+it have similar concepts like : arrays, tuples, dictionary, 
+    tuples is basically a collection of elements of different data types
+        once a tuple is created we can't add the additional values, but we can modify the existing values via "mut" keyword
+        indexing in tuples also work similar as in arrays
+
+range in rust is defined using double dots (..) , for example for x in 1..11 
+    last value of the range is excluded
+    and what the value we will take for x in "for x in <range>", it bydefault is mutable
+
+we cannot directly transfer the ownership of string in rust 
+    instead either we can clone that or we can copy that
+
+the syntax for defining string is also kinda different
+    let a = "harsh dahiya";
+    let _b = String::from("harsh dahiya");
+
+    The difference between the two :
+        let a = "harsh dahiya"; uses a string slice (&str) and represents a fixed, static string.
+        let _b = String::from("harsh dahiya"); creates a String object and represents a dynamic, heap-allocated string that can be modified and resized.
+
+The ability to define functions below the main function, or elsewhere in the code, is related to the language's support for function declarations or function prototypes. In some languages, you need to declare or prototype a function before using it in the main part of the code, while in others, you can define functions below the main function without any forward declarations. In rust we can declare that anywhere
+
+
+
+fn main() {
+    let s1 = String::from("Harsh Dahiya");
+    let s2 = s1;
+    println!("{}", s2);
+
+    // Onwership transferred to s2 and s1 is no longer valid
+}
+
+"::" in rust are always used to call internal things
+
+Option enums are generally useful for handling cases where a value might be present, or there might be no value at all.
+the gneral syntax of option enum is as follows:
+
+    enum Option<T> {
+        Some(T),
+        None,
+    }
+    where T is the type of value or datatype
+
+    consider them like true and false
+
+when using # with the default operator i.e ({;#?}) it prints everything in the new line
+
+Implementation in rust is all about calling the structs outside the main function, the basic idea is to readily reduce the space in the main function.
+
+We can also make functions inside the struct, but since that is local function, hence it will be available locally only.
+
+&self is used to use read only values 
+
+There are two ways of importing external packages in rust.
+    Either run the following command in the terminal 
+        cargo add <packageName>
+    Or go to cargo.toml and inside dependencies section add
+        <packageName> : <will automaticall show details>
+
+"mod" keyword is used to crete new modules or sync files in the main file.
+"use" keyword is just used to call the modules or import the modules into our program;
+
+hashmaps are like dictionary in python, they are used to store key value pair
+BTreeMap is used to store data in sorted order in the form of key value pair
+
+if any integer overflows with the value, then  it returns the 2's complement
+
+
+Following command is used to delete the package using powershell in the desired directory
+    Remove-Item -Recurse -Force <package_name>          
+
+References:
+    CodeYourMoneyYoutubeChannel
+    Let's get rusty
+    
